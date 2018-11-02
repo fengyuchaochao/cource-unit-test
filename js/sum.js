@@ -1,7 +1,7 @@
-module.exports = function (...rest) {
+module.exports = function (arr) {
     var sum = 0;
-    for(let n of rest) {
-        sum += n;
-    }
+    arr && arr.forEach(item => {
+       sum += item;
+    });
     return sum;
 }
