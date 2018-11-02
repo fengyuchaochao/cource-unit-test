@@ -10,7 +10,6 @@ app.listen(PORT);
 console.log('start server...on ' + PORT);
 
 
-
 //assert(value, message), 或者assert.ok(value, message)  判断value是否为真，如果为真，则正常运行，如果为假，则运行中断，报出message的错误信息
 // var flag = false;
 // // assert(flag);
