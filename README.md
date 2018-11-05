@@ -23,10 +23,10 @@
 1: 我们直接使用断言去测试代码有什么问题呢？
 如果我们同时测试多段代码，那么如果某段代码断言报错，那么之后的测试就无法进行，而且整个代码的测试都需要手动去运行js代码，如何能够自动化运行测试代码，而且不会阻塞呢？mocha就是一个很好的基于js的测试框架。
 2: mocha的基本使用
->  第一步： 新建项目mocha-demo,  然后执行：cd mocha-demo , 进入目录， 执行 npm init 命令生成package.json文件。
->  第二步：npm install mocha --save-dev
->  第二步：新建test目录，然后我们所有的测试用例都放在该目录一下，执行mocha命令的时候，默认会执行test目录下的所有文件，进行测试
->  第四步：编写具体的测试用例，具体格式为：
+> * 第一步： 新建项目mocha-demo,  然后执行：cd mocha-demo , 进入目录， 执行 npm init 命令生成package.json文件。
+> * 第二步：npm install mocha --save-dev
+> * 第二步：新建test目录，然后我们所有的测试用例都放在该目录一下，执行mocha命令的时候，默认会执行test目录下的所有文件，进行测试
+> * 第四步：编写具体的测试用例，具体格式为：
 说明：describe用来定义一个测试模块，一个模块里可以嵌套很多子模块，也可以包含多个测试用例，而it用来表示一个测试用例。
 
 ```
@@ -55,10 +55,10 @@ describe('求和', () => {
 这是一个自动化测试工具，可以为我们的测试提供更好的服务，例如，代码修改后，自动进行测试，或者可以指定测试环境，是运行在哪个浏览器中等，所以karma的作用就是配合mocha为我们的测试提供一个更快捷友好的测试环境。
 
 karma的基本使用：
-> 第一步：新建项目karma-demo,  然后执行：cd karma-demo , 进入目录， 执行 npm init 命令生成package.json文件。
-> 第二步： npm install karma --save-dev
-> 第三步：执行karma init ,生成karma.conf.js，该文件配置了测试相关所需要的环境。
-> 第四步：执行karma start命令，然后就会根据karma.conf.js里面的配置，测试相关文件（这里省略了具体的测试代码和用例，通常在test目录下）
+> * 第一步：新建项目karma-demo,  然后执行：cd karma-demo , 进入目录， 执行 npm init 命令生成package.json文件。
+> * 第二步： npm install karma --save-dev
+> * 第三步：执行karma init ,生成karma.conf.js，该文件配置了测试相关所需要的环境。
+> * 第四步：执行karma start命令，然后就会根据karma.conf.js里面的配置，测试相关文件（这里省略了具体的测试代码和用例，通常在test目录下）
 
 ### 5: travis.CL 持续集成工具
 
